@@ -7,14 +7,15 @@ sw.py is python script that read configuration information from sitewatch.ini
 file and writes polling log.
 
 # How to run program
-There are two two things that must be taken into account.
-1. You must create subdirectory for the logs. 
-eg. if you run this on linux machine straigh from your home directory there 
-must be directory ~/logs
-2. sitewatch.ini MUST be in the same directory where sw.py is located
 
-when above conditions are met you just simply run python src/hw.py from command 
-line 
+```
+$ git clone git@github.com:raiwal/sitewatch.git
+$ cd sitewatch
+$ mkdir logs
+$ python src/sw.py
+```
+1. You must create subdirectory for the logs if it does not exist
+2. sitewatch.ini must be in the same directory where sw.py is located.
 
 # Sitewatch.ini
 * Only one recognition pattern supported
