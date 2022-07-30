@@ -12,7 +12,7 @@ import re
 import logging
 
 config = configparser.ConfigParser()
-config.read('sitewatch.ini', encoding='utf-8')
+config.read('src/sitewatch.ini', encoding='utf-8')
 time_interval = int(config['DEFAULT']['Delay'])
 
 log_date = str(datetime.date.today())
